@@ -1,0 +1,21 @@
+micronaut:
+  client:
+    default-load-balancer: none
+  application:
+    name: loja-service
+  server:
+    port: 8081
+redis:
+  uri: redis://localhost
+  ssl: true
+  timeout: 30s
+
+kafka:
+  bootstrap:
+    servers: localhost:9092
+
+consul:
+  client:
+    registration:
+      enabled: false
+    defaultZone: "localhost:8761"
